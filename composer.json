@@ -1,0 +1,17 @@
+{
+    "name": "musefx/agglutinator",
+    "description": "Agglutination for agglutinative languages.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MuseFx\\Agglutinator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "musefx"
+        }
+    ],
+    "require": {}
+}
