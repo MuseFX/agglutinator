@@ -3,6 +3,7 @@
 namespace MuseFx\Agglutinator;
 
 use MuseFx\Agglutinator\Languages\ClassMap;
+use MuseFx\Agglutinator\Words\Noun;
 
 class Agglutinator
 {
@@ -20,13 +21,13 @@ class Agglutinator
         return $this;
     }
 
-    public function createFromString(string $string): WordBuilder
+    public function createNoun(string $string): Noun
     {
-        return ClassMap::resolve($this->locale, $string);
+        return ClassMap::resolve($this->locale, $string, Noun::class);
     }
 
-    public static function createWithLocale(string $locale, string $string): WordBuilder
+    public static function createNounWithLocale(string $locale, string $string): Noun
     {
-        return ClassMap::resolve($locale, $string);
+        return ClassMap::resolve($locale, $string, Noun::class);
     }
 }

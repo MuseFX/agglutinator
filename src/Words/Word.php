@@ -1,13 +1,10 @@
 <?php
 
-namespace MuseFx\Agglutinator;
+namespace MuseFx\Agglutinator\Words;
 
-abstract class WordBuilder
+abstract class Word
 {
     protected string $word;
-
-    abstract public function plural(): self;
-    abstract public function dative(): self;
 
     public function __construct(string $word)
     {

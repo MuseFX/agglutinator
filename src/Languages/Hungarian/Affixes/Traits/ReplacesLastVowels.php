@@ -1,6 +1,6 @@
 <?php
 
-namespace MuseFx\Agglutinator\Languages\Hungarian\Traits;
+namespace MuseFx\Agglutinator\Languages\Hungarian\Affixes\Traits;
 
 trait ReplacesLastVowels
 {

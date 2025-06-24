@@ -1,11 +1,11 @@
 <?php
 
-namespace MuseFx\Agglutinator\Languages\Hungarian;
+namespace MuseFx\Agglutinator\Languages\Hungarian\Words;
 
-use MuseFx\Agglutinator\Languages\Hungarian\Cases\Dative;
-use MuseFx\Agglutinator\WordBuilder;
+use MuseFx\Agglutinator\Languages\Hungarian\Affixes\Dative;
+use MuseFx\Agglutinator\Words\Noun as BaseNoun;
 
-class Hungarian extends WordBuilder
+class Noun extends BaseNoun
 {
     public function plural(): self
     {
