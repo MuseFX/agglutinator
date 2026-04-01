@@ -5,13 +5,13 @@ namespace MuseFx\Agglutinator\Languages\Hungarian\Affixes;
 use MuseFx\Agglutinator\Languages\Hungarian\Affixes\Traits\ReplacesLastVowels;
 use MuseFx\Agglutinator\Languages\Hungarian\Tools\VowelHarmonyResolver;
 
-class Plural
+class Plural extends Affix
 {
     use ReplacesLastVowels;
 
-    protected array $affixes = '-k';
+    protected string $affix = '-k';
 
-    protected array $interfixes = [
+    protected array $interfixesOnConsonantEnding = [
         '-o-' => [ VowelHarmonyResolver::LOW, VowelHarmonyResolver::MIXED ],
         '-e-' => [ VowelHarmonyResolver::HIGH ]
     ];
