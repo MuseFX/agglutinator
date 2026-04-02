@@ -1,5 +1,7 @@
 ## Agglutinator
 
+Agglutination for agglutinative (for example, hungarian) languages.
+
 #### Currently available languages
 - hu
 
