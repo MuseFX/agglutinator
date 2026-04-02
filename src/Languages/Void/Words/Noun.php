@@ -6,12 +6,22 @@ use MuseFx\Agglutinator\Words\Noun as BaseNoun;
 
 class Noun extends BaseNoun
 {
-    public function plural(): self
+    public function plural(?string &$appliedAffix = null): BaseNoun
     {
         return $this;
     }
 
-    public function dative(): self
+    public function dative(?string &$appliedAffix = null): BaseNoun
+    {
+        return $this;
+    }
+
+    public function ablative(?string &$appliedAffix = null): BaseNoun
+    {
+        return $this;
+    }
+
+    public function terminative(?string &$appliedAffix = null): BaseNoun
     {
         return $this;
     }

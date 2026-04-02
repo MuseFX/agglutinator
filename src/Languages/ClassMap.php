@@ -23,6 +23,9 @@ class ClassMap
     ): Word {
         $namespace = self::$namespaces[$locale] ?? null;
         $class = $namespace . str_replace(PackageNamespace::class, '', $interface);
+        if (!class_exists($class)) {
+            $class = null;
+        }
         if (empty($class)) {
             if ($strictLang) {
                 throw new LocaleNotFoundException($locale);
